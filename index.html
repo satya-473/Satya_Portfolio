@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satya Narayana Gunda - Data Analyst Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <nav id="navbar">
+        <div class="container navbar-content">
+            <a href="#" class="logo">SATYA.</a>
+            
+            <div class="nav-links" id="desktop-menu">
+                <a href="#about" class="nav-link" data-section="about">About</a>
+                <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+                <a href="#experience" class="nav-link" data-section="experience">Experience</a>
+                <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+                <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+            </div>
+
+            <a href="mailto:gundasatya225@gmail.com" class="hire-me-btn desktop-only">
+                Hire Me
+            </a>
+
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <i data-feather="menu" id="menu-icon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#skills" class="mobile-link">Skills</a>
+        <a href="#experience" class="mobile-link">Experience</a>
+        <a href="#projects" class="mobile-link">Projects</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+        <a href="mailto:gundasatya225@gmail.com" class="mobile-hire-btn">Hire Me</a>
+    </div>
+
+    <section id="hero" class="hero-section" onmousemove="handleTilt(event)" onmouseleave="handleTiltReset()">
+        <div class="hero-background"></div>
+        <div class="container hero-grid">
+            
+            <div class="hero-text">
+                <div class="hero-badge" data-aos="fade-right">
+                    HELLO! I'M SATYA NARAYANA GUNDA
+                </div>
+                <h1 class="hero-title" data-aos="fade-right" data-aos-delay="200">
+                    Data <span class="gradient-text">Analyst</span> & <br/>
+                    Storyteller
+                </h1>
+                <p class="hero-subtitle" data-aos="fade-right" data-aos-delay="400">
+                    I transform complex datasets into clear, actionable stories using Python, SQL, and Power BI. 
+                    Passionately focused on cleaning, analyzing, and visualizing insights.
+                </p>
+                
+                <div class="hero-actions" data-aos="fade-up" data-aos-delay="600">
+                    <a href="#projects" class="main-cta-btn">View My Work</a>
+                    <div class="social-icons">
+                        <a href="https://github.com/satya-473" target="_blank" rel="noreferrer" class="social-icon-btn"><i data-feather="github"></i></a>
+                        <a href="https://www.linkedin.com/in/satya-narayanda/" target="_blank" rel="noreferrer" class="social-icon-btn"><i data-feather="linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="avatar-area" id="avatar-area">
+                <div class="avatar-container" id="avatar-container">
+                    
+                    <div class="data-image-wrapper">
+                        <img
+                            src="./image.jpeg"
+                            alt="Data Visualization Graphic"
+                            class="data-image"
+                            onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1551288049-d76587c31ec9?q=80&w=1000&auto=format&fit=crop';"
+                        >
+                        <div class="avatar-glow"></div>
+                    </div>
+
+                    <div class="floating-badge badge-sql" style="--depth: 100px; --delay: 0s;">
+                        <div class="badge-icon-bg"><i data-feather="database" size="24" class="icon-cyan"></i></div>
+                        <span class="badge-text">SQL</span>
+                    </div>
+                    <div class="floating-badge badge-powerbi" style="--depth: 80px; --delay: 1s;">
+                        <div class="badge-icon-bg"><i data-feather="bar-chart-2" size="24" class="icon-yellow"></i></div>
+                        <span class="badge-text">Power BI</span>
+                    </div>
+                    <div class="floating-badge badge-excel" style="--depth: 120px; --delay: 2s;">
+                        <div class="badge-icon-bg"><i data-feather="file-text" size="24" class="icon-green"></i></div>
+                        <span class="badge-text">Excel</span>
+                    </div>
+                    <div class="floating-badge badge-python" style="--depth: 60px; --delay: 1.5s;">
+                        <div class="badge-icon-bg"><i data-feather="cpu" size="24" class="icon-blue"></i></div>
+                        <span class="badge-text">Python</span>
+                    </div>
+                    
+                    <div class="avatar-ring"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-marquee">
+            <div class="marquee-content">
+                <span class="marquee-item"><span>•</span> Data Cleaning</span>
+                <span class="marquee-item"><span>•</span> EDA</span>
+                <span class="marquee-item"><span>•</span> Data Preprocessing</span>
+                <span class="marquee-item"><span>•</span> Python</span>
+                <span class="marquee-item"><span>•</span> SQL</span>
+                <span class="marquee-item"><span>•</span> Power BI</span>
+                <span class="marquee-item"><span>•</span> Excel</span>
+                <span class="marquee-item"><span>•</span> Problem Solving</span>
+                <span class="marquee-item"><span>•</span> Communication</span>
+                <span class="marquee-item"><span>•</span> Data Cleaning</span>
+                <span class="marquee-item"><span>•</span> EDA</span>
+                <span class="marquee-item"><span>•</span> Data Preprocessing</span>
+                <span class="marquee-item"><span>•</span> Python</span>
+                <span class="marquee-item"><span>•</span> SQL</span>
+                <span class="marquee-item"><span>•</span> Power BI</span>
+                <span class="marquee-item"><span>•</span> Excel</span>
+                <span class="marquee-item"><span>•</span> Problem Solving</span>
+                <span class="marquee-item"><span>•</span> Communication</span>
+            </div>
+        </div>
+        
+        <div class="scroll-down-icon" id="scroll-down-icon">
+            <i data-feather="chevron-down" class="scroll-down-arrow"></i>
+        </div>
+    </section>
+
+    <section id="about" class="section-padding section-dark">
+        <div class="container">
+            <div class="about-content" data-aos="fade-up">
+                <h3 class="about-title">About Me</h3>
+                <p class="about-text">
+                    I’m a Data Analyst who loves working with data—cleaning it, analyzing it, and visualizing insights using **Python, SQL, and Power BI**. I enjoy creating dashboards and models that turn complex data into simple stories.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="skills" class="section-padding section-darker">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">My Skills</span>
+                <h2 class="section-title">Technical Arsenal</h2>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skills-column" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="skills-heading"><span class="heading-line violet-line"></span> Tech Stack</h3>
+                    <div class="skill-cards-grid" id="technical-skills">
+                        </div>
+                </div>
+
+                <div class="skills-column" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="skills-heading"><span class="heading-line fuchsia-line"></span> Analysis & Soft Skills</h3>
+                    <div class="skill-tags-wrapper" id="analysis-soft-skills">
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section-padding section-dark">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Experience & Education</span>
+                <h2 class="section-title">My Journey</h2>
+            </div>
+
+            <div class="timeline-wrapper" id="experience-timeline">
+                </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section-padding section-darker section-projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Portfolio</span>
+                <h2 class="section-title">Featured Works</h2>
+            </div>
+            
+            <div class="projects-grid" id="projects-grid">
+                </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding section-dark section-contact">
+        <div class="container text-center">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Contact</span>
+                <h2 class="section-title">Get In Touch</h2>
+            </div>
+            
+            <div class="contact-content">
+                <p class="contact-text" data-aos="fade-up" data-aos-delay="100">
+                    I'm currently looking for new opportunities as a Data Analyst. 
+                    Whether you have a question or just want to say hi, my inbox is always open!
+                </p>
+                
+                <a href="mailto:gundasatya225@gmail.com" class="main-cta-btn contact-cta" data-aos="fade-up" data-aos-delay="200">
+                    <i data-feather="mail" class="mail-icon"></i> Say Hello
+                </a>
+
+                <div class="footer-bottom">
+                    <div class="social-icons">
+                        <a href="https://github.com/satya-473" target="_blank" rel="noreferrer" class="social-icon-btn"><i data-feather="github"></i></a>
+                        <a href="https://www.linkedin.com/in/satya-narayanda/" target="_blank" rel="noreferrer" class="social-icon-btn"><i data-feather="linkedin"></i></a>
+                    </div>
+                    
+                    <p class="copyright">
+                        Designed & Built by Satya Narayana Gunda © 2025
+                    </p>
+
+                    <a href="mailto:gundasatya225@gmail.com" class="footer-mail">
+                        <i data-feather="mail" class="mail-icon-small"></i> gundasatya225@gmail.com
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // --- DATA STRUCTURES ---
+
+        const NAV_LINKS = [
+            { name: 'About', href: '#about' },
+            { name: 'Skills', href: '#skills' },
+            { name: 'Experience', href: '#experience' },
+            { name: 'Projects', href: '#projects' },
+            { name: 'Contact', href: '#contact' },
+        ];
+
+        const SKILLS = {
+            technical: [
+                { name: 'Python', icon: 'terminal', details: 'Pandas, NumPy, Matplotlib, Seaborn' },
+                { name: 'SQL', icon: 'database', details: 'Joins, Subqueries, Window Functions' },
+                { name: 'Power BI', icon: 'bar-chart-2', details: 'Dashboards, DAX, Power Query' },
+                { name: 'Excel', icon: 'file-text', details: 'Pivot Tables, Advanced Formulas' },
+            ],
+            analysis: [
+                'Data Cleaning', 'EDA', 'Data Preprocessing', 'Feature Engineering', 
+                'Outlier Detection', 'Data Modeling', 'Trend Analysis', 'KPI Development'
+            ],
+            soft: [
+                'Analytical Thinking', 'Problem Solving', 'Communication', 'Documentation', 
+                'Time Management', 'Team Collaboration'
+            ]
+        };
+
+        const EXPERIENCE = [
+            {
+                company: 'Blend Vidya EdTech',
+                role: 'Python Development Intern',
+                period: '2024 – 2025',
+                description: [
+                    'Developed Python applications using functions, loops, and file handling.',
+                    'Improved code reliability through unit testing and debugging.',
+                    'Collaborated with the team, created documentation, and gained experience with Git.'
+                ]
+            },
+            {
+                company: 'Sagi Rama Krishnam Raju Engineering College',
+                role: 'B.Tech in ECE',
+                period: '2021 – 2025',
+                description: ['GPA: 8.06', 'Specialized in Electronics & Communication']
+            },
+            {
+                company: 'Sri Krishna Chaitanya Junior College',
+                role: 'Intermediate (MPC)',
+                period: '2019 – 2021',
+                description: ['GPA: 9.66']
+            },
+            {
+                company: 'Ratnam High School',
+                role: 'Secondary Education',
+                period: '2018 – 2019',
+                description: ['GPA: 10.0', 'Completed Secondary Education']
+            }
+        ];
+
+        const PROJECTS = [
+            {
+                title: 'Superbike Data Analytics Dashboard',
+                tags: ['Python', 'Power BI', 'Excel', 'Power Query'],
+                description: 'Cleaned and transformed a raw superbike dataset, engineered metrics like Power-to-Weight Ratio, treated outliers, and built a premium Power BI dashboard with KPIs, slicers, trend charts, and brand-level insights.',
+                links: {
+                    github: 'https://github.com/satya-473/Global-Superbikes-Analytics-Dashboard',
+                    linkedin: 'https://www.linkedin.com/posts/satya-narayanda_codegnan-hashtags-powerbi-activity-7401581235858419712-6ePn'
+                },
+                image: './Screenshot 2025-12-02 154920.jpg',
+                fallbackImage: 'https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=1000&auto=format&fit=crop'
+            },
+            {
+                title: 'Anime Dataset BI Dashboard',
+                tags: ['Power Query', 'Excel', 'Power BI'],
+                description: 'Cleaned and transformed a Kaggle anime dataset, performed feature engineering, and built an interactive Power BI dashboard showing KPIs, popularity trends, genre insights, and ratings distribution.',
+                links: {
+                    github: 'https://github.com/satya-473/Power-BI-Project-Data-Cleaning-and-Transformation-of-Anime-Dataset',
+                    linkedin: 'https://www.linkedin.com/posts/satya-narayanda_powerbi-powerquery-dataanalytics-activity-7388909178637094912-UPLL'
+                },
+                image: './Screenshot 2025-12-03 115023.png',
+                fallbackImage: 'https://images.unsplash.com/photo-1578632767115-351597cf2477?q=80&w=1000&auto=format&fit=crop'
+            },
+            {
+                title: 'Multiple Disease Prediction System',
+                tags: ['Machine Learning', 'Python', 'Streamlit', 'SVM'],
+                description: 'Built ML models achieving 100% kidney disease accuracy and 95% lung cancer accuracy. Performed preprocessing, feature scaling, model training/testing, and created a Streamlit app for real-time predictions.',
+                links: {
+                    github: 'https://github.com/satya-473' 
+                },
+                image: './Screenshot 2025-12-03 142728.jpg',
+                fallbackImage: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1000&auto=format&fit=crop'
+            }
+        ];
+        
+        // --- SCRIPT LOGIC ---
+
+        const scrollDownIcon = document.getElementById('scroll-down-icon');
+        
+        // 3D Tilt Effect
+        const avatarContainer = document.getElementById('avatar-container');
+        const TILT_MAX = 10;
+        const TILT_FACTOR = 300;
+
+        const handleTilt = (event) => {
+            const rect = event.currentTarget.getBoundingClientRect();
+            const centerX = rect.left + rect.width / 2;
+            const centerY = rect.top + rect.height / 2;
+            
+            const x = event.clientX - centerX;
+            const y = event.clientY - centerY;
+
+            const rotateY = -(x / TILT_FACTOR) * TILT_MAX;
+            const rotateX = (y / TILT_FACTOR) * TILT_MAX;
+
+            avatarContainer.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+        }
+
+        const handleTiltReset = () => {
+            avatarContainer.style.transform = 'rotateX(0deg) rotateY(0deg)';
+        }
+
+
+        // Scroll-based Effects (Navbar and Progress)
+        const navbar = document.getElementById('navbar');
+        const scrollProgress = document.getElementById('scroll-progress');
+        const desktopNavLinks = document.querySelectorAll('.nav-links a');
+        const allSections = NAV_LINKS.map(link => document.getElementById(link.href.substring(1))).filter(el => el != null); 
+
+        const handleScroll = () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+            
+            const scrollTotal = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (window.scrollY / scrollTotal) * 100;
+            scrollProgress.style.width = `${scrolled}%`;
+
+            let currentActive = '';
+            const scrollPosition = window.scrollY + 200;
+
+            allSections.forEach(section => {
+                if (section.offsetTop <= scrollPosition) {
+                    currentActive = section.id;
+                }
+            });
+
+            desktopNavLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('data-section') === currentActive) {
+                    link.classList.add('active');
+                }
+            });
+
+            if (window.scrollY > 100) {
+                scrollDownIcon.style.opacity = '0';
+                scrollDownIcon.style.pointerEvents = 'none';
+            } else {
+                scrollDownIcon.style.opacity = '1';
+                scrollDownIcon.style.pointerEvents = 'auto';
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        handleScroll();
+
+
+        // Mobile Menu Toggle
+        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+        const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+        const menuIcon = document.getElementById('menu-icon');
+        const mobileLinks = mobileMenuOverlay.querySelectorAll('a');
+
+        mobileMenuToggle.addEventListener('click', () => {
+            const isOpen = mobileMenuOverlay.classList.toggle('open');
+            menuIcon.setAttribute('data-feather', isOpen ? 'x' : 'menu');
+            feather.replace();
+            document.body.style.overflow = isOpen ? 'hidden' : 'auto';
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenuOverlay.classList.remove('open');
+                menuIcon.setAttribute('data-feather', 'menu');
+                feather.replace();
+                document.body.style.overflow = 'auto';
+            });
+        });
+
+
+        // Data Rendering Functions
+        const renderSkills = () => {
+            const technicalContainer = document.getElementById('technical-skills');
+            const analysisSoftContainer = document.getElementById('analysis-soft-skills');
+
+            // Technical Skills
+            technicalContainer.innerHTML = SKILLS.technical.map(skill => `
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="50">
+                    <div class="skill-card-icon">
+                        <i data-feather="${skill.icon}" size="18"></i>
+                    </div>
+                    <h4 class="skill-card-title">${skill.name}</h4>
+                    <p class="skill-card-details">${skill.details}</p>
+                </div>
+            `).join('');
+
+            // Analysis and Soft Skills
+            const allTags = [...SKILLS.analysis, ...SKILLS.soft];
+            analysisSoftContainer.innerHTML = allTags.map(tag => `
+                <span class="skill-tag" data-aos="zoom-in" data-aos-delay="100">${tag}</span>
+            `).join('');
+
+            feather.replace();
+        };
+
+        const renderExperience = () => {
+            const timelineContainer = document.getElementById('experience-timeline');
+            timelineContainer.innerHTML = EXPERIENCE.map((exp, index) => `
+                <div class="timeline-item" data-aos="${index % 2 === 0 ? 'fade-left' : 'fade-right'}" data-aos-delay="200">
+                    <div class="timeline-dot">
+                        <div class="timeline-dot-inner"></div>
+                    </div>
+                    <div class="timeline-item-inner">
+                        <span class="timeline-period">${exp.period}</span>
+                        <h3 class="timeline-role">${exp.role}</h3>
+                        <h4 class="timeline-company">${exp.company}</h4>
+                        <ul class="timeline-description">
+                            ${exp.description.map(item => `<li>${item}</li>`).join('')}
+                        </ul>
+                    </div>
+                </div>
+            `).join('');
+        };
+
+        const renderProjects = () => {
+            const projectsContainer = document.getElementById('projects-grid');
+            projectsContainer.innerHTML = PROJECTS.map((project, index) => `
+                <div class="project-card" data-aos="fade-up" data-aos-delay="${index * 100}">
+                    <div class="project-image-wrapper">
+                        <div class="project-image-gradient"></div>
+                        <img src="${project.image}" alt="${project.title}" class="project-image" 
+                            onerror="this.onerror=null; this.src='${project.fallbackImage}';">
+                        <div class="project-tags">
+                            ${project.tags.slice(0, 2).map(tag => `<span class="project-tag">${tag}</span>`).join('')}
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">${project.title}</h3>
+                        <p class="project-description">${project.description}</p>
+                        
+                        <div class="project-links">
+                            ${project.links.github ? `
+                                <a href="${project.links.github}" target="_blank" rel="noreferrer" class="project-link">
+                                    <i data-feather="github" size="16"></i> Code
+                                </a>` : ''}
+                            ${project.links.linkedin ? `
+                                <a href="${project.links.linkedin}" target="_blank" rel="noreferrer" class="project-link">
+                                    <i data-feather="linkedin" size="16"></i> Post
+                                </a>` : ''}
+                            <span class="external-link-icon"><i data-feather="external-link" size="16"></i></span>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+
+            feather.replace();
+        };
+
+        // Initial rendering on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            renderSkills();
+            renderExperience();
+            renderProjects();
+            feather.replace();
+        });
+    </script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+</body>
+</html>
